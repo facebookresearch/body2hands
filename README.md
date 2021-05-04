@@ -161,3 +161,8 @@ python -m smplx_plugin.demo --checkpoint models/ours_wb_arm2wh_checkpoint.pth \
 ## to visualize
 cd visualization && ./wrapper.sh ../video_data/Multi/conan_frank/mocap/ mocap_
 ```
+
+
+## License
+- [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode). 
+See the [LICENSE](LICENSE) file. 
