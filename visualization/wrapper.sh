@@ -1,3 +1,4 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
 vid=$1
 tag=$2
 

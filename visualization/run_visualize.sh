@@ -1,3 +1,4 @@
+# Copyright (c) Facebook, Inc. and its affiliates.
 #!/usr/bin/bash
 
 set -e
