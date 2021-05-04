@@ -1,0 +1,5 @@
+*__pycache__/
+models/*
+*__init__.py
+*.pyc
+video_data/*/
