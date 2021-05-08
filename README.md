@@ -125,6 +125,9 @@ python sample.py --checkpoint models/ours_wbi_arm2wh_checkpoint.pth \
                  --require_image
 ```
 
+After running the above code, you can check to see if your outputs match the provided outputs we provide under `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_predicted_body_3d_frontal/<%04d.txt>` or `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_wim_predicted_body_3d_frontal/<%04d.txt>` depending on if you run with body only input or body+image input respectively. 
+
+
 #### Visualization (Optional)
 Once you have run the above test script, the output will be saved to a `<path_to_sequence>/results/<tag>_predicted_body_3d_frontal/` directory as .txt files for each frame. We can then visualize the results as follows (see [MTC repo](https://github.com/CMU-Perceptual-Computing-Lab/MonocularTotalCapture) for installation instructions):
 
@@ -139,6 +142,9 @@ cd visualization/
 ## visualize model with body and image as input
 ./wrapper.sh ../video_data/Multi/sample/chemistry_test/seq1/ test_wim_
 ```
+
+After running the above visualization code, you can check to see if the first few generated visualizations match ours by checking `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_predicted_body_3d_frontal/<%04d.png>` or `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_wim_predicted_body_3d_frontal/<%04d.png>` depending on if you run with body only input or body+image input respectively. 
+
 
 ## SMPLx Plug-in Demo
 We also provide a quick plug-in script for SMPLx body model compatibility using FrankMocap to obtain the 3D body poses (as opposed to Adam body model using MTC).
