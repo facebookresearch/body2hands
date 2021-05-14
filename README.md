@@ -47,11 +47,13 @@ Please follow the installation instructions outlined in the [MTC repo](https://g
 ## Download data and models:
 #### Download data:
 ```
-sh ./scripts/download_data
+sh ./scripts/download_data.sh
 tar xf b2h_data.tar
 ```
 
-The downloaded data will unpack into the following directory structure:
+Please note, the above script will download all of the test, train, and demo data. However, if you want to download only a part of the dataset, please look inside the `download_data.sh` script for individual download URLs. 
+
+The fully downloaded data will unpack into the following directory structure:
 
 ```
 |-- video_data/
