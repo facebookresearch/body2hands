@@ -1,4 +1,13 @@
-# Train data for each individual speaker
+# Copyright (c) Facebook, Inc. and its affiliates.
+
+## Download visualization models
+wget posefs1.perception.cs.cmu.edu/mtc/adam_blendshapes_348_delta_norm.json
+mv -v adam_blendshapes_348_delta_norm.json ./visualization/FitAdam/model/
+
+wget posefs1.perception.cs.cmu.edu/mtc/InitializeAdamData.h
+mv -v InitializeAdamData.h ./visualization/FitAdam/include/
+
+# Download train data for each individual speaker
 wget https://dl.fbaipublicfiles.com/body2hands/chemistry.tar
 wget https://dl.fbaipublicfiles.com/body2hands/conan.tar
 wget https://dl.fbaipublicfiles.com/body2hands/oliver.tar
