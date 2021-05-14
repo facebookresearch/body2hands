@@ -47,7 +47,7 @@ Please follow the installation instructions outlined in the [MTC repo](https://g
 ## Download data and models:
 #### Download data:
 ```
-sh ./scripts/download_data.sh
+sh ./scripts/download.sh
 tar xf b2h_data.tar
 ```
 
