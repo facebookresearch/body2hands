@@ -16,3 +16,7 @@ wget https://dl.fbaipublicfiles.com/body2hands/body2hands_test.tar
 
 # Demo files used as part of walk through demo in README
 wget https://dl.fbaipublicfiles.com/body2hands/body2hands_demo.tar
+
+## untar files downloaded in current directory
+for file in *.tar; do
+   tar -xvf "${file}" ; done
