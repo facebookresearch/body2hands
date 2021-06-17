@@ -45,46 +45,7 @@ Please follow the installation instructions outlined in the [MTC repo](https://g
 
 
 ## Download data and models:
-#### Download data:
-```
-sh ./scripts/download.sh
-```
-
-Please note, the above script will download all of the test, train, and demo data. However, if you want to download only a part of the dataset, please look inside the `download_data.sh` script for individual download URLs. 
-
-The fully downloaded data will unpack into the following directory structure:
-
-```
-|-- video_data/
-    |-- Chemistry/
-        |-- train/
-            |-- filepaths.npy
-            |-- full_bodies2.npy
-            |-- fully_hands2.npy
-            |-- full_resnet.npy
-    |-- Conan/
-    |-- Multi/
-        |-- sample/
-        |-- conan_frank/
-    |-- Oliver/
-    |-- Seth/
-    |-- Test/
-```
-
-Above, we only list the 4 individuals we train on: `Chemistry, Conan, Oliver, Seth`. However, please note we also include annotations for 5 additional speakers in the tar: `Almaram, Angelica, Ellen, Rock, Shelly`.
-
-The test data and follow-along demo data we provide are located in `Test/` and `Multi/` respectively.
-
-Note: We only provide 3D full body and resnet feature annotations. To obtain the associated videos, please refer to [speech2gesture](https://github.com/amirbar/speech2gesture/blob/master/data/dataset.md).
-
-
-#### Download models:
-```
-sh ./scripts/download_models
-tar xf b2h_models.tar
-```
-We provide the pre-trained models for both our body-only model **(Ours w/ B)** and the body with image model **(Ours w/ B+I)**.
-
+Downloading data described [here](https://github.com/facebookresearch/body2hands/tree/master/scripts).
 
 ## Training from scratch:
 ```
