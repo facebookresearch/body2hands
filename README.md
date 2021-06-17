@@ -87,7 +87,7 @@ python sample.py --checkpoint models/ours_wbi_arm2wh_checkpoint.pth \
                  --require_image
 ```
 
-After running the above code, you can check to see if your outputs match the provided outputs we provide under `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_predicted_body_3d_frontal/<%04d.txt>` or `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_wim_predicted_body_3d_frontal/<%04d.txt>` depending on if you run with body only input or body+image input respectively. 
+After running the above code, you can check to see if your outputs match the provided outputs we provide under `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_predicted_body_3d_frontal/<%04d.txt>` or `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_wim_predicted_body_3d_frontal/<%04d.txt>` depending on if you run with body only input or body+image input respectively.
 
 
 #### Visualization (Optional)
@@ -105,7 +105,7 @@ cd visualization/
 ./wrapper.sh ../video_data/Multi/sample/chemistry_test/seq1/ test_wim_
 ```
 
-After running the above visualization code, you can check to see if the first few generated visualizations match ours by checking `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_predicted_body_3d_frontal/<%04d.png>` or `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_wim_predicted_body_3d_frontal/<%04d.png>` depending on if you run with body only input or body+image input respectively. 
+After running the above visualization code, you can check to see if the first few generated visualizations match ours by checking `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_predicted_body_3d_frontal/<%04d.png>` or `video_data/Multi/sample/chemistry_test/seq1/sample_results/test_wim_predicted_body_3d_frontal/<%04d.png>` depending on if you run with body only input or body+image input respectively.
 
 
 ## SMPLx Plug-in Demo
@@ -130,7 +130,10 @@ python -m smplx_plugin.demo --checkpoint models/ours_wb_arm2wh_checkpoint.pth \
 cd visualization && ./wrapper.sh ../video_data/Multi/conan_frank/mocap/ mocap_
 ```
 
+## Coming Soon!
+- Pretrained models (Ours w/ B and Ours w/ B+I)
+- Saved results from our methods as additional downloadable data
 
 ## License
-- [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode). 
-See the [LICENSE](LICENSE) file. 
+- [CC-BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/legalcode).
+See the [LICENSE](LICENSE) file.
