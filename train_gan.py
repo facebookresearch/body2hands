@@ -117,9 +117,9 @@ def load_data(args, rng):
             quant_windows = np.concatenate((quant_windows, curr_p1), axis=0)
             p0_paths = np.concatenate((p0_paths, curr_paths), axis=0)
 
-    print '===> in/out', gt_windows.shape, quant_windows.shape
+    print('===> in/out', gt_windows.shape, quant_windows.shape)
     if args.require_image:
-        print "===> hand_ims", hand_ims.shape
+        print("===> hand_ims", hand_ims.shape)
     ## DONE load from external files
 
 
@@ -134,7 +134,7 @@ def load_data(args, rng):
         train_ims, test_ims = hand_ims[train_idx,:,:], hand_ims[test_idx,:,:]
         train_ims = train_ims.astype(np.float32)
         test_ims = test_ims.astype(np.float32)
-    print "====> train/test", train_X.shape, test_X.shape
+    print("====> train/test", train_X.shape, test_X.shape)
 
     train_X = np.swapaxes(train_X, 1, 2).astype(np.float32)
     train_Y = np.swapaxes(train_Y, 1, 2).astype(np.float32)
