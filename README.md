@@ -131,7 +131,6 @@ cd visualization && ./wrapper.sh ../video_data/Multi/conan_frank/mocap/ mocap_
 ```
 
 ## Coming Soon!
-- Pretrained models (Ours w/ B and Ours w/ B+I)
 - Saved results from our methods as additional downloadable data
 
 ## License

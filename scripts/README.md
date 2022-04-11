@@ -70,7 +70,7 @@ right_hand = full_hands2[i, j, 21:, :]
 
 # Download models (Coming soon!):
 ```
-sh ./scripts/download_models
+sh ./scripts/download_models.sh
 tar xf b2h_models.tar
 ```
 We provide the pre-trained models for both our body-only model **(Ours w/ B)** and the body with image model **(Ours w/ B+I)**.

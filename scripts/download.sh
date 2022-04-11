@@ -29,3 +29,4 @@ wget https://dl.fbaipublicfiles.com/body2hands/body2hands_demo.tar
 ## untar files downloaded in current directory
 for file in *.tar; do
    tar -xvf "${file}" ; done
+
