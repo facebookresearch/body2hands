@@ -68,7 +68,7 @@ right_hand = full_hands2[i, j, 21:, :]
 - these are simply pre-processed image features, where both hand images (left, right) is fed through a pretrained resnet34 individually, which outputs a 512D feature per hand.
 
 
-# Download models (Coming soon!):
+# Download models:
 ```
 sh ./scripts/download_models.sh
 tar xf b2h_models.tar
