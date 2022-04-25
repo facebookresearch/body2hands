@@ -18,7 +18,7 @@ FEATURE_MAP = {
     'arm2wh':((6*6), 42*6),
 }
 
-ARMS_ONLY = [12,13,14,15,16,17] #arms for smpl
+ARMS_ONLY = [12,13,14,15,16,17] #arms for mtc
 EPSILON = 1e-10
 
 ## helper for calculating mean and standard dev

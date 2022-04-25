@@ -12,7 +12,7 @@ import pickle
 import utils.modelZoo as modelZoo
 from utils.load_utils import *
 
-ARMS_ONLY = [12,13,14,15,16,17]
+ARMS_ONLY = [13,14,16,17,18,19] #arms for smpl
 N = 4
 
 
