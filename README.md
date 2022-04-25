@@ -47,6 +47,16 @@ Please follow the installation instructions outlined in the [MTC repo](https://g
 ## Download data and models:
 Downloading data described [here](https://github.com/facebookresearch/body2hands/tree/master/scripts).
 
+## Using your own data for train:
+If you are looking to use your own data for train/test:
+
+1. To obtain the resnet features, we use the pretrained torchvision model: `resnet_model = models.resnet34(pretrained=True)`. We crop each of the hands to a tight-fit bounding box using openpose estimates before feeding it into the model. The output is a 1024D tensor. If openpose does not find a hand, we fill the 1024D tensor with 0's.
+
+2. Run MTC or other body pose extraction method to get the full body pose estimates on your video frames. Use `ARMS=[12,13,14,15,16,17]` and `HANDS=[-42:]` to properly index into the MTC outputs. Then convert each component from axis angle to 6D rotation using the provided [conversion function](https://github.com/facebookresearch/body2hands/blob/main/utils/load_utils.py#L96).
+
+3. Create the .npy files (similar to the dataset provided) by concatenating the per-frame features into BxTxF sequences. Please see the data [documentation](https://github.com/facebookresearch/body2hands/tree/main/scripts) for more information on the data format.
+
+
 ## Training from scratch:
 ```
 ## Flag definitions:
